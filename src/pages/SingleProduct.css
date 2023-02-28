@@ -1,0 +1,23 @@
+.single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.single__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 40em;
+  border: 1px solid white;
+}
+.single__item-img {
+  width: 15em;
+  height: 15em;
+  object-fit: contain;
+}
+.btn-back {
+  width: 6em;
+  margin-top: 1em;
+}

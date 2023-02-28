@@ -1,0 +1,30 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
+  gap: 2em;
+}
+
+.products__item {
+  width: 15em;
+  overflow: hidden;
+}
+
+.products__item:hover .products__item-img {
+  transform: scale(1.1);
+}
+
+.products__item-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.products__item-img {
+  width: 15em;
+  height: 15em;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  transition: transform 0.3s linear;
+}

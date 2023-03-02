@@ -12,7 +12,6 @@
   align-items: center;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
 }
-
 .loader__box {
   height: 15px;
   width: 105px;
@@ -28,14 +27,12 @@
   animation: move 500ms linear 0ms infinite;
   margin-right: 30px;
 }
-
 .loader__box :first-child {
   position: absolute;
   top: 0;
   left: 0;
   animation: grow 500ms linear 0ms infinite;
 }
-
 .loader__box :last-child {
   position: absolute;
   top: 0;
@@ -43,7 +40,6 @@
   margin-right: 0;
   animation: grow 500ms linear 0s infinite reverse;
 }
-
 .hidden {
   display: none;
 }

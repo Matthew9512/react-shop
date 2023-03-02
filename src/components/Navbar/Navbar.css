@@ -6,14 +6,12 @@
   height: 50px;
   padding: 2em;
 }
-
 .navbar__logo {
   font-size: 1.6rem;
 }
 #menu-toggle {
   display: none;
 }
-
 .navbar__menu-button-container {
   display: none;
   height: 100%;
@@ -42,7 +40,6 @@
   content: '';
   margin-top: 8px;
 }
-
 .navbar__menu {
   display: flex;
   flex-direction: row;
@@ -51,11 +48,9 @@
   margin: 0;
   padding: 0;
 }
-
 .navbar__menu > li {
   margin: 0 0.5rem;
 }
-
 .navbar__btn {
   color: #2a2a2a;
   cursor: pointer;
@@ -67,18 +62,15 @@
   transition-duration: 400ms;
   transition-property: color;
 }
-
 .navbar__btn:focus,
 .navbar__btn:hover {
   /* color: #2a2a2a; */
 }
-
 .navbar__btn:focus:after,
 .navbar__btn:hover:after {
   width: 100%;
   left: 0%;
 }
-
 .navbar__btn:after {
   content: '';
   pointer-events: none;
@@ -92,7 +84,6 @@
   transition-duration: 400ms;
   transition-property: width, left;
 }
-
 #menu-toggle:checked + .navbar__menu-button-container .navbar__menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
@@ -104,7 +95,6 @@
   margin-top: 0px;
   transform: rotate(-405deg);
 }
-
 .fa-cart-shopping::after {
   position: absolute;
   top: -30%;
@@ -159,14 +149,4 @@
   .navbar__btn {
     color: #f0f0f0;
   }
-}
-
-.navbar__menu li:nth-of-type(1) .navbar__btn {
-  animation: fromTop 0.25s linear forwards;
-}
-.navbar__menu li:nth-of-type(2) .navbar__btn {
-  animation: fromTop 0.3s linear forwards;
-}
-.navbar__menu li:nth-of-type(3) .navbar__btn {
-  animation: fromTop 0.35s linear forwards;
 }

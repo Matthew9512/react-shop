@@ -5,6 +5,7 @@ import SingleProduct from './pages/SingleProduct';
 import Error from './pages/Error';
 
 function App() {
+  //
   return (
     <BrowserRouter>
       <Routes>

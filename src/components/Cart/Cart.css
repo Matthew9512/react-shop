@@ -6,8 +6,15 @@
   height: 100vh;
   z-index: 9;
   background-color: rgb(137, 137, 137);
-  overflow-x: scroll;
+  overflow-y: scroll;
   padding: 1em;
+}
+.cart::-webkit-scrollbar {
+  width: 6px;
+}
+.cart::-webkit-scrollbar-thumb {
+  background-color: #434343;
+  border-radius: 10px;
 }
 .cart__header {
   margin-block: 2em;
@@ -50,7 +57,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  width: 85%;
+  width: 80%;
   height: 100%;
   padding-left: 0.4em;
+}
+.cart__product-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart__sum {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-block: 1em;
 }

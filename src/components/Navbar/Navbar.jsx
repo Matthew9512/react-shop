@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
-function Navbar({ cartVisibility, setCartVisibility }) {
+function Navbar({ cartVisibility, setCartVisibility, length }) {
   //
   const handleCartToggle = () => {
     !cartVisibility ? setCartVisibility(true) : setCartVisibility(false);
@@ -16,11 +16,6 @@ function Navbar({ cartVisibility, setCartVisibility }) {
       </label>
       <ul className='navbar__menu'>
         <li>
-          <a href='#projects'>
-            <button className='navbar__btn'>Projects</button>
-          </a>
-        </li>
-        <li>
           <a href='#about'>
             <button className='navbar__btn'>About</button>
           </a>
@@ -32,7 +27,7 @@ function Navbar({ cartVisibility, setCartVisibility }) {
         </li>
         <li>
           <button onClick={handleCartToggle} className='navbar__btn'>
-            <i className='fa-solid fa-cart-shopping'></i>
+            <i className='fa-solid fa-cart-shopping' data-amount={!length ? 0 : length}></i>
           </button>
         </li>
       </ul>

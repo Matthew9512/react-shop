@@ -4,7 +4,8 @@ export const getLS = function () {
 
 export const saveLS = function (item) {
   const lsArr = getLS();
-  lsArr.push(item);
+  const lsItem = { ...item, amount: 1 };
+  lsArr.push(lsItem);
   localStorage.setItem('products', JSON.stringify(lsArr));
 
   return lsArr;

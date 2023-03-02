@@ -11,6 +11,12 @@
   overflow: hidden;
 }
 
+.products__img-wrapper {
+  width: 15em;
+  height: 15em;
+  overflow: hidden;
+}
+
 .products__item:hover .products__item-img {
   transform: scale(1.1);
 }
